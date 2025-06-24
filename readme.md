@@ -33,7 +33,7 @@ sudo dpkg --install Packet_Tracer.deb
 distrobox-export --app packettracer
 
 
-#to avoid future errors of incompatible dependencies, i recommend creating a systemd file to disable internet. so as not to have problems updating.
+# to avoid future errors of incompatible dependencies, i recommend creating a systemd file to disable internet. so as not to have problems updating.
 
 #find the name of your network card in my case enp4s0, it could also be called eth0
 ip -a
@@ -56,7 +56,7 @@ RemainAfterExit=yes
 [Install]
 WantedBy=multi-user.target
 
-# exit with ctrl + x 
+#exit with ctrl + x 
 
 #activate systemd at boot
 sudo systemctl daemon-reload
